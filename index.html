@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>un-don.gouv – Effectuer un don</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="tri"></div>
+<header><div class="hd">
+<div class="gov"><img src="img/gouvernement.svg" alt="Logo du Gouvernement français, barré d’une croix rouge"><span class="cross"></span></div>
+<div class="svc"><b data-t="serviceName"></b><span data-t="serviceBaseline"></span></div>
+<div class="whoBtns"><button class="btn" onclick="openW('erwan')" data-t="who.erwan.button"></button><button class="btn" onclick="openW('andrea')" data-t="who.andrea.button"></button></div>
+</div></header>
+<main>
+<div class="bc" data-t="breadcrumb"></div>
+<h1 data-t="h1"></h1>
+<p class="lead" data-t="lead"></p>
+<div class="stepper"><small id="stl"></small><div class="bar"><i id="bar"></i></div></div>
+
+<section class="step on" id="s1">
+<h2 data-t="s1.h2"></h2>
+<p data-t="s1.text"></p>
+<p><b data-t="s1.who"></b></p><div class="row"><button class="btn" id="pick0" onclick="pick(0)"></button><button class="btn" id="pick1" onclick="pick(1)"></button></div>
+</section>
+
+<section class="step" id="s2">
+<div class="s2g"><figure class="car" id="car" hidden><div class="frame" id="frame"></div><figcaption id="cap"></figcaption><div class="dots" id="dots"></div></figure><div>
+<h2 id="q2"></h2>
+<p data-t="s2.text"></p>
+<div class="arena" style="height:auto;min-height:90px;overflow:visible;display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:none;padding:0">
+<button class="btn" id="o2" style="position:static" onclick="go(3)" data-t="s2.yes"></button>
+<button class="btn sec" id="n2" style="position:static" onclick="nope()" data-t="s2.no"></button>
+</div>
+<div class="alert" id="a2"></div>
+</div></div>
+</section>
+
+<section class="step" id="s3">
+<h2 data-t="s3.h2"></h2>
+<p data-t="s3.text"></p>
+<div class="arena" id="ar3">
+<button class="btn" style="left:16px;bottom:16px" onclick="go(5)" data-t="s3.yes"></button>
+<button class="btn sec" id="n3" style="left:55%;top:20px" data-t="s3.no"></button>
+</div>
+<div class="ref" id="c3"></div>
+</section>
+
+<section class="step" id="s5">
+<h2 data-t="s5.h2"></h2>
+<div class="alert on ok" data-t="s5.success"></div>
+<div class="cards" id="cards"></div>
+<p class="ref" data-t="s5.note"></p>
+<div class="row"><button class="btn sec" onclick="go(1)" data-t="s5.redo"></button></div>
+</section>
+</main>
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-labelledby="ovt"><div class="md">
+<h2 id="ovt"></h2>
+<p id="ovtext"></p>
+<div class="reels" id="reels"><div class="reel">❔</div><div class="reel">❔</div><div class="reel">❔</div></div>
+<div class="wheelbox" id="wheelbox" hidden><div class="ptr"></div><svg id="wheel" viewBox="-100 -100 200 200" aria-hidden="true"></svg></div>
+<div class="ref" id="ovm" style="text-align:center;margin:0 0 8px"></div>
+<div class="alert" id="res"></div>
+<div class="row"><button class="btn" id="again" hidden onclick="contest(true)">Retenter ma chance</button><button class="btn sec" onclick="closeC()" data-t="contest.close"></button></div>
+</div></div>
+<div class="ov" id="who" hidden role="dialog" aria-modal="true" aria-labelledby="whot"><div class="md wide">
+<h2 id="whot"></h2>
+<div id="whobody"></div>
+<div class="row"><button class="btn sec" onclick="closeW()" data-t="who.close"></button></div>
+</div></div>
+<footer data-t="footer"></footer>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
