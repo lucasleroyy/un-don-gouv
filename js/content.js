@@ -17,7 +17,7 @@ var CONTENT = {
   h1: "Faire un don en toute simplicité",
   lead: "Démarche n° DON-2026-0001 · Durée estimée : 3 minutes (ou 3 heures)",
   stepLabel: "Étape {n} sur 4",
-  footer: "Site parodique sans aucun lien avec l’administration. Les dons vont bien à Erwan ou Andréa sous forme de cadeaux... Dommage.",
+  footer: "Site parodique. Les dons vont bien à Erwan ou Andréa sous forme de cadeaux.",
 
   /* ---------- Étape 1 ---------- */
   s1: {
