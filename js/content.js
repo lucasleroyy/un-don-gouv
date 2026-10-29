@@ -17,7 +17,7 @@ var CONTENT = {
   h1: "Faire un don en toute simplicité",
   lead: "Démarche n° DON-2026-0001 · Durée estimée : 3 minutes (ou 3 heures)",
   stepLabel: "Étape {n} sur 4",
-  footer: "Site parodique. Les dons vont bien à Erwan ou Andréa sous forme de cadeaux.",
+  footer: "Site parodique. Les dons vont bien à Erwan ou Andréa sous forme de cadeaux !",
 
   /* ---------- Étape 1 ---------- */
   s1: {
@@ -57,7 +57,6 @@ var CONTENT = {
   s5: {
     h2: "Choisissez le bénéficiaire",
     success: "Démarche terminée. Vous êtes officiellement généreux·se.",
-    note: "Vous pouvez aussi donner aux deux. L’administration ne vous en voudra pas.",
     redo: "Refaire la démarche",
     alsoTitle: "Et aussi {name} ?",
     alsoText: "Les deux cagnottes sont séparées, vous pouvez donner à l’une, à l’autre ou aux deux.",
