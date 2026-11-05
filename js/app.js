@@ -55,7 +55,7 @@ function giftAndrea() {
   
   $("ovt").textContent = "Merci pour votre don à Andréa !";
   $("ovtext").textContent =
-    "Votre générosité nous fait chaud au cœur ❤️ ! Et Erwan ? Si vous lui faites aussi un don, vous pourrez peut-être remporter un beau cadeau ! 🎁";
+    "Votre générosité nous fait chaud au cœur ❤️ ! Et Erwan ??? Si vous lui faites aussi un don, vous pourrez peut-être remporter un beau cadeau ! 🎁";
 
   $("reels").hidden = true;
   $("wheelbox").hidden = true;
